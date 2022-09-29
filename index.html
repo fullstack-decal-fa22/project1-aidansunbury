@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta name="author" content="Aidan Sunbury">
+        <meta name="description" content="Aidan Sunbury's Personal Website">
+        <title>Aidan Sunbury</title>
+        <head>
+            <link rel="stylesheet" href="styles.css">
+          </head>
+    </head>
+    <body>
+        <script>
+            var tries = 0
+        </script>
+      <div class="flex-container">
+        <div id="side-bar">
+            <h2>Image Gallery</h2>
+            <div id="image-grid">
+                <div class="grid-item">
+                    <img src = "7333 2.JPEG" id="pic">
+                </div>
+                <div class="grid-item">
+                    <img src = "/Images/4027.JPEG" id="pic">
+                </div>
+                <div class="grid-item">
+                    <img src = "/Images/4504.JPEG" id="pic">
+                </div>
+                <div class="grid-item">
+                    <img src = "/Images/5252.JPEG" id="pic">
+                </div>
+            </div>
+            
+
+            
+          </div>
+          <div id="main-content">
+           
+            
+            
+            <div id = "name-header">
+                <h1>Aidan</h1>
+                <h1>Sunbury</h1>
+            </div>
+
+            <div class = "subheading">
+                <h2>
+                    About
+                </h2>
+                <div class = "subheading-content">
+                    <p>This is about me</p>
+                </div>
+            </div>
+            <div class = "subheading">
+                <h2>
+                    Work
+                </h2>
+                <div class = "subheading-content">
+                    <p>This is about me</p>
+                    <button>
+                        <a href="Resume Formatted.pdf" download="Aidan's Resume" target="_blank">Resume</a>
+                    </button>
+                </div>
+            </div>
+            <div class = "subheading">
+                <h2>
+                    Contact and Socials
+                </h2>
+                <div class = "subheading-content">
+                    <h4>Phone Number: 925-451-5545</h4>
+                    <h4>Email: aidansunbury@berkeley.edu</h4>
+                    <button>
+                        <a href="https://www.instagram.com/aidansunbury/" target="_blank">Instagram</a>
+                    </button>
+                    <button>
+                        <a href="https://github.com/aidansunbury" target="_blank">Github</a>
+                    </button>
+                    
+                    
+                </div>
+            </div>
+            <div class = "subheading">
+                <h5>
+                    Secret
+                </h5>
+                <div class = "subheading-content">
+                    <h6>Enter in the correct password to unlock a secret</h6>
+                    <form>
+                        <label for = "secret">password</label>
+                        <input type="password" id="secret" value = "">
+                        <input type="button" onclick="myFunction()" value="Submit">
+                    </form>
+                    <script>
+                        function myFunction(){
+                            
+                            var input = document.getElementById("secret").value;
+                            
+                            if (input == "Aidan"){
+                                alert("Yaay! You got it correct!");
+                            }
+                            else if (tries > 5){
+                                alert("You are really bad at guessing passwords. Try the name of the person making the website!")
+                            }
+                            else {
+                                alert("Wrong Password, keep working at it!");
+                            }
+                            tries+=1
+                        }
+                    </script>
+                </div>
+            </div>
+            
+        </div>
+      </div>
+      
+        
+        
+    </body>
+        
+
+        
+        
+
+        
+       
+    
+</html>

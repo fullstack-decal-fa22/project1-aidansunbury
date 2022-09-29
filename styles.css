@@ -1,0 +1,48 @@
+*{
+    background-color: antiquewhite;
+}
+
+h1{
+    margin-left: 10px;
+}
+.flex-container {
+    display: flex;
+    
+    flex-direction: row;
+    height: 100%;
+  }
+  #side-bar{
+    background-color: #59388c;
+    flex:1;
+    
+  }
+  #main-content{
+    background-color: antiquewhite;
+    flex:3
+  }
+  #pic{
+    height: 100px;
+    width: 100px;
+    margin:auto;
+    display: block;
+  }
+  #name-header{
+    display: flex;
+    flex-direction: row;
+    
+  }
+  .subheading{
+    margin-left: 10px;
+  }
+  .subheading-content{
+    margin-left: 20px;
+  }
+  #image-grid{
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  .grid-item{
+    padding: 10px;
+    padding-bottom: 30px;
+    background-color: #59388c;
+  }
