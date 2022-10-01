@@ -5,11 +5,35 @@
 h1{
     margin-left: 10px;
 }
+hr{
+  border: 3px solid #59388c;
+  
+}
+li :hover{
+  
+  color:  #59388c;
+  
+}
+p{
+  text-indent: 30px;
+  font-size: 16px;
+}
+#small{
+  font-size: 6px;
+}
+#smaller{
+  font-size: 2px;
+}
 .flex-container {
     display: flex;
     
     flex-direction: row;
     height: 100%;
+  }
+
+  #image-header{
+    background-color: #59388c;
+    padding-left: 20px;
   }
   #side-bar{
     background-color: #59388c;
@@ -20,11 +44,13 @@ h1{
     background-color: antiquewhite;
     flex:3
   }
-  #pic{
-    height: 100px;
-    width: 100px;
+  .pic{
+    
+    width: 150px;
     margin:auto;
     display: block;
+    object-fit: contain;
+    background-color: #59388c;
   }
   #name-header{
     display: flex;
